@@ -1,19 +1,19 @@
 * {
     box-sizing: border-box;
-    font-family: "Roboto"
+    font-family: "Roboto";
 }
 
 /*HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
 .container-header {
     margin: 0px auto;
-    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-company {
     width: 150px;
-    margin-left: 110px;
-    margin-top: 20px;
-    padding-bottom: 10px;
 }
 
 .restaurant-location {
@@ -26,10 +26,6 @@
     justify-content: center;
 }
 
-.restaurant-location p {
-    margin-left: 50px;
-}
-
 .fa-location-dot {
     font-size: 20px;
     height: 20px;
@@ -40,7 +36,7 @@
 
 .container-main {
     margin: 0px auto;
-    width: 375px;
+    width: 100%;
 }
 
 .container-explanation {
@@ -79,23 +75,26 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin: 25px;
 }
 
+/*                                                  BOUTON CHOISISSEZ UN RESTAURANT */
 .button-choose {
     display: flex;
-    width: 250px;
+    width: 100%;
     align-items: center;
-    margin-left: 30px;
     border-radius: 20px 20px 20px 20px;
+    background-color: whitesmoke;
     box-shadow: 3px 3px 20px grey;
 }
 
 .button-choose p {
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-    background-color: red;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    background-color: #9356DC;
+    color: white;
     border-radius: 30px 30px 30px 30px;
     position: absolute;
     text-align: center;
@@ -103,10 +102,165 @@
 }
 
 .fa-mobile-screen-button {
-    margin-left: 25px;
+    margin-left: 40px;
+    font-size: 20px;
     color: grey;
 }
 
 .button-choose h5 {
     margin-left: 30px;
+    font-size: 15px;
 }
+
+/*                                                  BOUTON COMPOSEZ VOTRE MENU */
+.button-compose {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 20px grey;
+    margin-top: 30px;
+}
+
+.button-compose p {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 30px 30px 30px 30px;
+    position: absolute;
+    text-align: center;
+    margin-left: -10px;
+}
+
+.fa-list-check {
+    margin-left: 40px;
+    font-size: 20px;
+    color: grey;
+}
+
+.button-compose h5 {
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+/*                                                  BOUTON DEGUSTEZ AU RESTAURANT */
+.button-eat {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 20px grey;
+    margin-top: 30px;
+}
+
+.button-eat p {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 30px 30px 30px 30px;
+    position: absolute;
+    text-align: center;
+    margin-left: -10px;
+}
+
+.fa-store {
+    margin-left: 40px;
+    font-size: 20px;
+    color: grey;
+}
+
+.button-eat h5 {
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+/* RESTAURANT BLOCK RESTAURANT BLOCK RESTAURANT BLOCK RESTAURANT BLOCK RESTAURANT BLOCK RESTAURANT BLOCK RESTAURANT BLOCK */
+.container-restaurant {
+    padding: 25px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-restaurant img {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.container-restaurant h5 {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.container-restaurant p {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.container-restaurant i {
+    position: absolute;
+    left: 80%;
+    margin-top: 170px;
+    font-size: 17px;
+}
+
+.new-logo {
+    background-color: #99E2D0;
+    color: seagreen;
+    position: absolute;
+    left: 70%;
+    padding: 6px;
+    font-size: 12px;
+}
+
+/*                                                  LA PALETTE DU GOUT */
+.container-lapalettedugout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/*                                                  LA NOTE ENCHANTEE */
+.container-lanoteenchantee {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/*                                                  A LA FRANCAISE */
+.container-alafrançaise {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/*                                                LE DELICE DES SENS */
+.container-ledelicedessens {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* FOOTER BLOCK  FOOTER BLOCK  FOOTER BLOCK  FOOTER BLOCK  FOOTER BLOCK  FOOTER BLOCK  FOOTER BLOCK */
