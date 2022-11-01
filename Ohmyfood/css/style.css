@@ -4,6 +4,11 @@
 }
 
 /*HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
+header a {
+    text-decoration: none;
+    color: grey;
+}
+
 .container-header {
     margin: 0px auto;
     display: flex;
@@ -14,13 +19,14 @@
 
 .logo-company {
     width: 150px;
+    padding: 15px;
 }
 
 .restaurant-location {
     width: 100%;
     height: 50px;
     background-color: rgb(226, 226, 226);
-    box-shadow: inset 0px 2px #999;
+    box-shadow: inset 0px 1px#999;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +75,16 @@
     margin-bottom: 40px;
 }
 
+#bouton-explorer:hover {
+    background: linear-gradient(#9356DC, #FF79DA);
+    box-shadow: 0px 3px 20px grey;
+}
+
 /* FEATURE BLOCK FEATURE BLOCK FEATURE BLOCK FEATURE BLOCK FEATURE BLOCK FEATURE BLOCK FEATURE BLOCK FEATURE BLOCK FEATURE BLOCK */
+.title-fonction {
+    margin-left: 20px;
+    font-size: 22px;
+}
 
 .container-feature {
     display: flex;
@@ -86,7 +101,17 @@
     align-items: center;
     border-radius: 20px 20px 20px 20px;
     background-color: whitesmoke;
-    box-shadow: 3px 3px 20px grey;
+    box-shadow: 3px 3px 10px grey;
+}
+
+.button-choose:hover {
+    background-color: rgb(242, 207, 247);
+    box-shadow: 3px 3px 30px grey;
+}
+
+.button-choose:hover i {
+    color: #9356DC;
+    font-weight: bold;
 }
 
 .button-choose p {
@@ -98,6 +123,7 @@
     border-radius: 30px 30px 30px 30px;
     position: absolute;
     text-align: center;
+    padding-top: 5px;
     margin-left: -10px;
 }
 
@@ -119,8 +145,18 @@
     align-items: center;
     border-radius: 20px 20px 20px 20px;
     background-color: whitesmoke;
-    box-shadow: 3px 3px 20px grey;
+    box-shadow: 3px 3px 10px grey;
     margin-top: 30px;
+}
+
+.button-compose:hover {
+    background-color: rgb(242, 207, 247);
+    box-shadow: 3px 3px 30px grey;
+}
+
+.button-compose:hover i {
+    color: #9356DC;
+    font-weight: bold;
 }
 
 .button-compose p {
@@ -132,6 +168,7 @@
     border-radius: 30px 30px 30px 30px;
     position: absolute;
     text-align: center;
+    padding-top: 5px;
     margin-left: -10px;
 }
 
@@ -153,8 +190,18 @@
     align-items: center;
     border-radius: 20px 20px 20px 20px;
     background-color: whitesmoke;
-    box-shadow: 3px 3px 20px grey;
+    box-shadow: 3px 3px 10px grey;
     margin-top: 30px;
+}
+
+.button-eat:hover {
+    background-color: rgb(242, 207, 247);
+    box-shadow: 3px 3px 30px grey;
+}
+
+.button-eat:hover i {
+    color: #9356DC;
+    font-weight: bold;
 }
 
 .button-eat p {
@@ -166,6 +213,7 @@
     border-radius: 30px 30px 30px 30px;
     position: absolute;
     text-align: center;
+    padding-top: 5px;
     margin-left: -10px;
 }
 
@@ -208,11 +256,23 @@
     margin-bottom: 10px;
 }
 
+.container-restaurant a {
+    text-decoration: none;
+    color: black;
+}
+
 .container-restaurant i {
     position: absolute;
     left: 80%;
     margin-top: 170px;
     font-size: 17px;
+}
+
+.container-restaurant i:hover {
+    color: #9356DC;
+    font-weight: bold;
+    transition-property: font-weight, color;
+    transition-duration: 1s;
 }
 
 .new-logo {
@@ -264,3 +324,138 @@
 }
 
 /* FOOTER BLOCK  FOOTER BLOCK  FOOTER BLOCK  FOOTER BLOCK  FOOTER BLOCK  FOOTER BLOCK  FOOTER BLOCK */
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-footer {
+    width: 100%;
+    background-color: hsl(0, 1%, 23%);
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+}
+
+.container-footer h4 {
+    font-family: "Shrikhand";
+    font-size: 20px;
+}
+
+.container-footer i {
+    padding-right: 5px;
+}
+
+.fa-handshake {
+    transform: rotate(120deg);
+    font-size: 13px;
+}
+
+/* MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU 
+ */
+.container-header-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container-header-menu img {
+    margin-left: 80px;
+}
+
+.container-header-menu i {
+    margin-left: 10px;
+}
+
+/* CONTAINER MAIN */
+
+.container-main-menu {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.container-main-menu img {
+    width: 100%;
+}
+
+.container-main-menu h5 {
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.title-menu {
+    background-color: whitesmoke;
+    width: 100%;
+    position: absolute;
+    margin-top: -50px;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-menu h3 {
+    margin-left: 10px;
+    font-family: "Shrikhand";
+    font-weight: 500;
+}
+
+.title-menu i {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.green-line {
+    background-color: rgba(112, 224, 84, 0.904);
+    width: 35px;
+    height: 2px;
+    margin-left: 10px;
+}
+
+.align-item {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.container-items {
+    background-color: white;
+    margin: 10px;
+    padding: 13px;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-items p {
+    margin: 0px;
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.container-items h5 {
+    margin: 0px;
+}
+
+.container-button-command {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding-top: 15px;
+}
+
+#bouton-command {
+    background: linear-gradient(rgb(255, 121, 218), #9356DC);
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-weight: 400;
+    border-radius: 30px 30px 30px 30px;
+    border-width: 0px;
+    box-shadow: 0px 3px 10px grey;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
