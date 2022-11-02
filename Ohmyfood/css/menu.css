@@ -105,6 +105,16 @@ header a {
     margin-right: 10px;
 }
 
+@keyframes fondue {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .container-items {
     background-color: white;
     margin: 10px;
@@ -112,6 +122,43 @@ header a {
     border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
+    animation: fondue 1s both;
+}
+
+.container1 {
+    animation-delay: 0.1s;
+}
+
+.container2 {
+    animation-delay: 0.2s;
+}
+
+.container3 {
+    animation-delay: 0.3s;
+}
+
+.container4 {
+    animation-delay: 0.4s;
+}
+
+.container5 {
+    animation-delay: 0.5s;
+}
+
+.container6 {
+    animation-delay: 0.6s;
+}
+
+.container7 {
+    animation-delay: 0.7s;
+}
+
+.container8 {
+    animation-delay: 0.8s;
+}
+
+.container9 {
+    animation-delay: 0.9s;
 }
 
 .container-items p {
