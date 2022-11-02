@@ -9,6 +9,55 @@ header a {
     color: grey;
 }
 
+.container-spinner {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 90%;
+    position: fixed;
+    z-index: 1;
+    animation-name: container;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes container {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+.loader-spinner {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #99E2D0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 3s linear infinite;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .container-header {
     margin: 0px auto;
     display: flex;
@@ -351,111 +400,4 @@ footer a {
 .fa-handshake {
     transform: rotate(120deg);
     font-size: 13px;
-}
-
-/* MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU MENU 
- */
-.container-header-menu {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.container-header-menu img {
-    margin-left: 80px;
-}
-
-.container-header-menu i {
-    margin-left: 10px;
-}
-
-/* CONTAINER MAIN */
-
-.container-main-menu {
-    width: 100%;
-    background-color: whitesmoke;
-}
-
-.container-main-menu img {
-    width: 100%;
-}
-
-.container-main-menu h5 {
-    margin-left: 10px;
-    margin-bottom: 2px;
-}
-
-.title-menu {
-    background-color: whitesmoke;
-    width: 100%;
-    position: absolute;
-    margin-top: -50px;
-    border-radius: 30px 30px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.title-menu h3 {
-    margin-left: 10px;
-    font-family: "Shrikhand";
-    font-weight: 500;
-}
-
-.title-menu i {
-    margin-right: 20px;
-    font-size: 18px;
-}
-
-.green-line {
-    background-color: rgba(112, 224, 84, 0.904);
-    width: 35px;
-    height: 2px;
-    margin-left: 10px;
-}
-
-.align-item {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 10px;
-}
-
-.container-items {
-    background-color: white;
-    margin: 10px;
-    padding: 13px;
-    border-radius: 20px 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.container-items p {
-    margin: 0px;
-    margin-top: 3px;
-    font-size: 12px;
-}
-
-.container-items h5 {
-    margin: 0px;
-}
-
-.container-button-command {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: whitesmoke;
-    padding-top: 15px;
-}
-
-#bouton-command {
-    background: linear-gradient(rgb(255, 121, 218), #9356DC);
-    color: white;
-    width: 200px;
-    height: 50px;
-    font-weight: 400;
-    border-radius: 30px 30px 30px 30px;
-    border-width: 0px;
-    box-shadow: 0px 3px 10px grey;
-    margin-top: 10px;
-    margin-bottom: 40px;
 }
