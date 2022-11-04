@@ -61,6 +61,7 @@ header a {
     background-color: whitesmoke;
 }
 
+
 .container-main-menu img {
     width: 100%;
 }
@@ -68,6 +69,7 @@ header a {
 .container-main-menu h5 {
     margin-left: 10px;
     margin-bottom: 2px;
+    font-size: 18px;
 }
 
 .title-menu {
@@ -103,6 +105,7 @@ header a {
     display: flex;
     justify-content: space-between;
     margin-right: 10px;
+    white-space: nowrap;
 }
 
 @keyframes fondue {
@@ -115,6 +118,47 @@ header a {
     }
 }
 
+.container-validation {
+    display: none;
+    background-color: #99E2D0;
+    padding: 17px 0px 1px 15px;
+    width: 60px;
+    height: 68px;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    right: 10px;
+    margin-top: -13px;
+    font-size: 30px;
+    animation: slide-left 1s ease;
+    transform-origin: right;
+}
+
+.fa-circle-check {
+    font-weight: bold;
+    color: white;
+    animation: rotate-360 1s ease;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes rotate-360 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .container-items {
     background-color: white;
     margin: 10px;
@@ -123,6 +167,19 @@ header a {
     display: flex;
     flex-direction: column;
     animation: fondue 1s both;
+}
+
+.container-items:hover .container-validation {
+    display: block;
+}
+
+.container-items:hover .align-item {
+    justify-content: baseline;
+}
+
+.container-items:hover>.align-item .container-price {
+    margin-right: 50px;
+    transition: ease 1s;
 }
 
 .container1 {
@@ -164,11 +221,17 @@ header a {
 .container-items p {
     margin: 0px;
     margin-top: 3px;
-    font-size: 12px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .container-items h5 {
     margin: 0px;
+}
+
+.container-price {
+    padding-left: 5px;
 }
 
 .container-button-command {
